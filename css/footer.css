@@ -1,0 +1,41 @@
+footer{
+    background-color: #151426;
+    height: 300px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.contact p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3A1CA6;
+    cursor: default;
+}
+
+.contact .contact-display{
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+}
+
+.contact-display ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contact-display li{
+    margin: 10px;
+}
+
+.copy-text{
+    height: 30px;
+    width: 100%;
+    background-color: #151426;
+    color: #cacaca;
+    text-align: center;
+}
