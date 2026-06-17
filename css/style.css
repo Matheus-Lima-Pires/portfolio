@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cinzel, Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+/* cabeçalho */
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #755E8C;
+}
+
+.nome{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.nav, .nav-list{
+    display: flex;
+}
+
+.nav{
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Conteúdo principal */
+main, .content-banner{
+    display: flex;
+    align-items: center;
+}
+
+main{
+    justify-content: space-around;
+}
+
+.content-banner{
+    height: 92vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.banner{
+    background-image: url("../assets/stars-2616537.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.titulo-banner{
+    font-weight: bold;
+    background-color: #dadada90;
+    border-radius: 35px;
+    border: solid 2px #000;
+    width: 350px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 200px;
+    transition: 0.2s;
+}
+
+.titulo-banner h1{
+    padding: 10px;
+    color: #0d0d0d;
+}
+
+.titulo-banner:hover{
+    background-color: #755E8C;
+    scale: 1.05;
+    cursor: default;
+}
+
+.biografy-tablet{
+    display: none;
+}
+
+.biografy, .photo{
+    margin: 10px;
+}
+
+.biografy{
+    color: #fff;
+    letter-spacing: 3px;
+    background-color: #151426;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 150px;
+    min-width: 350px;
+    max-width: 600px;
+}
+
+.biografy h2, .biografy p{
+    padding: 10px;
+}
+
+.biografy h2{
+    font-size: 50px;
+}
+
+.biografy p{
+    font-size: 18px;
+}
+
+.photo{
+    margin-bottom: 150px;
+    min-width: 350px;
+    max-width: 600px;
+    min-height: 350px;
+    max-height: 600px;
+}
+
+.photo img{
+    width: 100%;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Rodapé */
+footer{
+    background-color: #151426;
+    height: 300px;
+}
+
+.contact-display iframe{
+    display: none;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.contact p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3A1CA6;
+    cursor: default;
+}
+
+.contact .contact-display{
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+}
+
+.contact-display ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contact-display li{
+    margin: 10px;
+}
+
+.copy-text{
+    height: 30px;
+    width: 100%;
+    background-color: #151426;
+    color: #cacaca;
+    text-align: center;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav a{
+        margin: 15px;
+    }
+
+    .nav-list li{
+        margin: 10px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .biografy, .photo{
+        display: none;
+    }
+
+    .biografy-tablet{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biografy-tablet img{
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .adress ul{
+        display: none;
+    }
+
+    .contact-display{
+        width: 100%;
+    }
+
+    .contact-display p{
+        margin: 10px auto;
+    }
+
+    .contact-display iframe{
+        display: block;
+        height: 500px;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #151426;
+        border-radius: 30px;
+    }
+
+    .contact-display ul{
+        margin-top: 0;
+    }
+
+    .info-contato li{
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    .copy-text{
+        height: auto;
+    }
+
+    .copy-text p{
+        padding: 20px;
+    }
+}
+
+@media(max-width:480px){
+    
+}
